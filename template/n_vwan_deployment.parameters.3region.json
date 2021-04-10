@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vWANRegionDetails": {
+      "value": [
+        {
+          "regionShortName": "AUE",
+          "regionAzureLocation": "Australia East",
+          "regionVWANHubAddressSpace": "10.0.1.0/24",
+          "regionVNetAddressSpace": "10.1.0.0/16",
+          "regionVNetSubnetAddressSpace": "10.1.0.0/24"
+        },
+        {
+          "regionShortName": "EUS",
+          "regionAzureLocation": "East US",
+          "regionVWANHubAddressSpace": "10.0.2.0/24",
+          "regionVNetAddressSpace": "10.2.0.0/16",
+          "regionVNetSubnetAddressSpace": "10.2.0.0/24"
+        },
+        {
+          "regionShortName": "SEA",
+          "regionAzureLocation": "Southeast Asia",
+          "regionVWANHubAddressSpace": "10.0.3.0/24",
+          "regionVNetAddressSpace": "10.3.0.0/16",
+          "regionVNetSubnetAddressSpace": "10.3.0.0/24"
+        }
+      ]
+    },
+    "tags": {
+      "value": {
+        "Owner": "Sameera Perera",
+        "CostCenter": "2345612",
+        "Application": "Fabrikam VWAN Lab Deployment"
+      }
+    },
+    "companyPrefix": {
+      "value": "FAB"
+    },
+    "environment": {
+      "value": "PRD"
+    }
+  }
+}
