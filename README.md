@@ -12,7 +12,7 @@ This example provisions a setup with 2 VWAN Hubs including a VNET and VM in each
 
 ![VWAN 2 Region Setup](images/vWAN2R_B.png "VWAN 2 Region Setup - Contoso")
 
-The two region setup can be provisioned using the [vwansubdeploy.parameters.json](/vwansubdeploy.parameters.json) file. An example deployment will look like below. 
+The two region setup can be provisioned using the [n_vwan_deployment.parameters.2region.json](/template/n_vwan_deployment.parameters.2region.json) file. An example deployment will look like below. 
 
 ```powershell
 az deployment sub create -f .\template\n_vwan_deployment.bicep -p .\template\n_vwan_deployment.parameters.2region.json -l australiaeast -c -o json
@@ -24,7 +24,7 @@ This example provisions a setup with 3 VWAN hubs similar to above. The final sol
 
 ![VWAN 3 Region Setup](images/vWAN3R_B.png "VWAN 3 Region Setup - Fabrikam")
 
-The three region setup can be provisioned using the [vwansubdeploy-3.parameters.json](/vwansubdeploy-3.parameters.json) file. An example deployment will look like below. 
+The three region setup can be provisioned using the [n_vwan_deployment.parameters.3region.json](/template/n_vwan_deployment.parameters.3region.json) file. An example deployment will look like below. 
 
 ```powershell
 az deployment sub create -f .\template\n_vwan_deployment.bicep -p .\template\n_vwan_deployment.parameters.3region.json -l australiaeast -c -o json
